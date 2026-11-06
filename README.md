@@ -50,7 +50,7 @@ HECKTOR 2026 asks for three linked outputs from a single PET/CT study of a head 
 
 **A Dual-Branch Fusion Pipeline for Head and Neck Tumor Segmentation, TN Staging, and Recurrence-Free Survival Prediction: HECKTOR 2026**
 
-Ikram Aissiou, Ahmed Riadh Fellah, Sam Guessoum, Naima Boukhiar
+
 
 - 🎤 HECKTOR 2026 Challenge paper, presented at **MICCAI 2026**, Strasbourg, France
 - 📄 [Read the paper (PDF)](https://papers.miccai.org/miccai-2026-sat/paper/HECKTOR_014.pdf)
