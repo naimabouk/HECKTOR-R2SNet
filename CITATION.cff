@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "A Dual-Branch Fusion Pipeline for Head and Neck Tumor Segmentation, TN Staging, and Recurrence-Free Survival Prediction: HECKTOR 2026"
+type: conference-paper
+authors:
+  - family-names: Aissiou
+    given-names: Ikram
+    orcid: "https://orcid.org/0009-0008-2845-3606"
+  - family-names: Fellah
+    given-names: Ahmed Riadh
+    orcid: "https://orcid.org/0009-0008-7783-9548"
+  - family-names: Guessoum
+    given-names: Sam
+    orcid: "https://orcid.org/0009-0003-1868-8018"
+  - family-names: Boukhiar
+    given-names: Naima
+    orcid: "https://orcid.org/0009-0005-0064-2737"
+collection-title: "HECKTOR 2026 Challenge, MICCAI 2026"
+location:
+  name: "Strasbourg, France"
+url: "https://papers.miccai.org/miccai-2026-sat/paper/HECKTOR_014.pdf"
+date-released: 2026-10-01
