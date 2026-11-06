@@ -16,7 +16,7 @@
 [![Docker](https://img.shields.io/badge/Docker-ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](#-getting-started)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
-**Ikram Aissiou¹ · Ahmed Riadh Fellah¹ · Sam Guessoum² · Naima Boukhiar¹**
+**Ikram Aissiou¹. Naima Boukhiar¹· Ahmed Riadh Fellah¹ · Sam Guessoum² **
 
 <sub>¹ Department of Computer Science, University of Algiers 1, Algeria &nbsp;|&nbsp; ² Department of Computer Science, Worcester Polytechnic Institute, USA</sub>
 
@@ -92,7 +92,7 @@ flowchart LR
 - **Task-specific nodal-count connectivity.** The staging head uses **6-connectivity** and the prognosis head **26-connectivity** when counting nodes, because each was trained against its own feature-extraction script. Harmonising them without retraining would silently shift each model's input distribution, so they are kept separate (`extract_radiomics_tn` vs `extract_radiomics_rfs`).
 - **Sign-corrected risk score.** On our validation split the raw ensembled output ranked patients opposite to increasing risk, so it is negated before submission so that a higher score means higher recurrence risk. This is an empirical correction, not something derivable from the architecture, and is documented in the paper for reproducibility.
 - **Flip test-time augmentation** (identity plus three single-axis flips) matches the flip augmentation used in training. Both TTA and the weighted ensemble are single-flag switches (`TTA_FLIPS`, `WEIGHTED_ENSEMBLE`) in `inference.py`.
-- **Staging training.** Dampened (power 0.5) inverse-frequency class weights with focal loss (γ = 2). Optimiser: AdamW with cosine annealing and early stopping (patience 10).
+- ** Staged training.** Dampened (power 0.5) inverse-frequency class weights with focal loss (γ = 2). Optimiser: AdamW with cosine annealing and early stopping (patience 10).
 
 ---
 
@@ -183,7 +183,7 @@ HECKTOR-R2SNet/
 @inproceedings{aissiou2026hecktor,
   title     = {A Dual-Branch Fusion Pipeline for Head and Neck Tumor Segmentation,
                TN Staging, and Recurrence-Free Survival Prediction: {HECKTOR} 2026},
-  author    = {Aissiou, Ikram and Fellah, Ahmed Riadh and Guessoum, Sam and Boukhiar, Naima},
+
   booktitle = {HECKTOR 2026 Challenge, MICCAI 2026},
   address   = {Strasbourg, France},
   year      = {2026},
@@ -199,7 +199,7 @@ Dataset reference: Saeed et al., *A Multimodal and Multi-centric Head and Neck C
 
 ## 📬 Contact
 
-Questions and issues are welcome through GitHub Issues. Corresponding author: Ikram Aissiou (`aissiouikram47@gmail.com`).
+Questions and issues are welcome through GitHub Issues. Corresponding author
 
 > ⚕️ This is a research prototype for a benchmark challenge and is **not a medical device**. It must not be used for clinical decisions.
 
